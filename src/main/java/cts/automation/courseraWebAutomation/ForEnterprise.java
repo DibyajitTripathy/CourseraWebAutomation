@@ -88,6 +88,7 @@ public class ForEnterprise
 	       if(!newTab.equals(parentwindow))
 	       {
 	        driver.switchTo().window(newTab);
+	        Thread.sleep(1000);
 	       }
 	     }
 	    
@@ -96,7 +97,8 @@ public class ForEnterprise
 	    Thread.sleep(2000);
 	    //driver.findElement(By.cssSelector("a.cta-button:nth-child(3)")).click();
 	    //driver.findElement(By.linkText("Get started")).click();
-	    driver.findElement(By.xpath("//a[@class='cta-button' and contains(text(),'Get started')]")).click();
+	    //driver.findElement(By.xpath("//a[@class='cta-button' and contains(text(),'Get started')]")).click();
+	    driver.findElement(By.xpath("//a[@class='cta-button']")).click();
         
         //Inputting the details
         Thread.sleep(5000);
